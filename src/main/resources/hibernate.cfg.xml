@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
-    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
     <session-factory>
@@ -13,8 +13,9 @@
         
         <!-- Hibernate Properties -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
-        <property name="hibernate.show_sql">true</property>
-        <property name="hibernate.format_sql">true</property>
+        <!--to hide the ??? or sql that is shown in console--> 
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">false</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
         
         <!-- Entity Mapping -->
